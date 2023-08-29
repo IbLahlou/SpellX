@@ -1,2 +1,3 @@
-import src.spellX as sx
-sx.logger.info("Welcome to my custom log") 
+from spellX import logger
+
+logger.info("Welcome to my custom log") 

@@ -21,4 +21,5 @@ pickle
 textblob
 spello
 cdifflib==1.2.6
+pytest
 -e .

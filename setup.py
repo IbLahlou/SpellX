@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.1"
 
-REPO_NAME = "SpellX"
+REPO_NAME = "spellX"
 AUTHOR_USER_NAME = "IbLahlou"
-SRC_REPO="SpellX"
+SRC_REPO="spellX"
 AUTHOR_EMAIL = "ibrahimlahlou021@gmail.com"
 
 setuptools.setup(
@@ -20,3 +20,5 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
 )
+
+
