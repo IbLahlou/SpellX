@@ -1,0 +1,111 @@
+[2023-08-29 16:39:21,016: INFO: main: Welcome to my custom log]
+[2023-08-29 16:42:33,351: INFO: main: Welcome to my custom log]
+[2023-08-29 18:20:13,978: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:20:13,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:22:53,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:22:53,469: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:23:39,982: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:23:39,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:23:50,885: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:23:50,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:24:17,705: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:24:17,705: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:25:49,243: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:25:49,249: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:29:41,335: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:29:41,340: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:29:52,449: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:29:52,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:32:43,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:32:43,807: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:33:01,083: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:33:01,089: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:44:35,199: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:44:35,203: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-29 18:47:50,767: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-29 18:47:50,773: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-30 10:32:17,638: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:32:17,644: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-30 10:32:23,787: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:32:23,793: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-30 10:36:36,480: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:36:36,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-30 10:43:11,254: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:45:58,067: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:46:36,337: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:46:36,343: ERROR: 3875739439: An error occurred: YAML file is empty]
+[2023-08-30 10:47:57,486: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:48:38,547: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:48:38,557:ERROR: 3875739439: An error occurred: YAML file is empty]
+[2023-08-30 10:50:00,177: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:50:00,184: ERROR: 3875739439: An error occurred: YAML file is empty]
+[2023-08-30 10:50:28,052: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:50:28,057: ERROR: 3875739439: An error occurred: YAML file is empty]
+[2023-08-30 10:50:42,762: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:52:34,037: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:53:48,453: INFO: 3875739439: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 10:53:48,464: INFO: 3875739439: yaml file: params.yaml loaded successfully]
+[2023-08-30 10:53:48,469: INFO: common: created directory at: artifacts]
+[2023-08-30 10:53:48,474: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-08-30 10:53:50,857: INFO: 4205007308: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2531880
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "8b6a1998e98f95404f14dd445fa4d0374bf9f5c3be8f9b4df41ca600c0460112"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BD70:E4CF:7770D5:7C3B25:64EF11A7
+Accept-Ranges: bytes
+Date: Wed, 30 Aug 2023 09:53:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22034-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1693389229.433488,VS0,VE289
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7e2475c34fbc8437b26577c98a970df0ec3102bc
+Expires: Wed, 30 Aug 2023 09:58:49 GMT
+Source-Age: 0
+
+]
+[2023-08-30 11:42:25,056: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-08-30 11:42:25,056: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-08-30 11:42:25,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-08-30 11:42:25,112: INFO: common: created directory at: artifacts]
+[2023-08-30 11:42:25,112: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-08-30 11:42:27,933: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2531880
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "8b6a1998e98f95404f14dd445fa4d0374bf9f5c3be8f9b4df41ca600c0460112"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BD70:E4CF:7770D5:7C3B25:64EF11A7
+Accept-Ranges: bytes
+Date: Wed, 30 Aug 2023 10:42:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22030-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1693392146.381553,VS0,VE229
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: abe91703767030241f43110873612db731d0c01d
+Expires: Wed, 30 Aug 2023 10:47:26 GMT
+Source-Age: 0
+
+]
+[2023-08-30 11:42:28,443: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]

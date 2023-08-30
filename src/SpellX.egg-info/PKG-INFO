@@ -1,3 +1,12 @@
+Metadata-Version: 2.1
+Name: spellX
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/IbLahlou/spellX
+Author: IbLahlou
+Author-email: ibrahimlahlou021@gmail.com
+Description-Content-Type: text/markdown
+
 # SpellX--Project for orthographic correction
 
 
