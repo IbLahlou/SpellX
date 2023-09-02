@@ -1,4 +1,5 @@
 tensorflow
+keras
 pandas
 dvc
 notebook
@@ -17,9 +18,6 @@ nltk
 Flask-Cors
 tqdm
 scikit-learn
-pickle
-textblob
-spello
-cdifflib==1.2.6
 pytest
+unidecode
 -e .

@@ -1,11 +1,13 @@
 Metadata-Version: 2.1
 Name: spellX
-Version: 0.0.1
-Summary: A small example package
-Home-page: https://github.com/IbLahlou/spellX
-Author: IbLahlou
+Version: 0.0.0
+Summary: A small python package for NLP app
+Home-page: https://github.com/IBLahlou/spellX
+Author: IBLahlou
 Author-email: ibrahimlahlou021@gmail.com
-Description-Content-Type: text/markdown
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/IBLahlou/spellX/issues
+Platform: UNKNOWN
 
 # SpellX--Project for orthographic correction
 
@@ -21,3 +23,4 @@ Description-Content-Type: text/markdown
 7. Update the pipeline 
 8. Update the main.py
 9. Update the dvc.yaml
+
