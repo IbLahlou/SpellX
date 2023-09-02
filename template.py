@@ -4,26 +4,36 @@ import logging
 
 logging.basicConfig(level=logging.INFO , format ='[%(asctime)s]: % (message)s:')
 
-project_name = "nlp_spelling_corrector"
+project_name = "spellx"
 
-list_of_files= [ 
-    ".github/workflows/.gitkeep",
+list_of_files = [
+    # Placeholder for GitHub Actions workflow
+    ".github/workflows/.gitkeep",  
+    # Constructor file
     f"src/{project_name}/__init__.py",
+    # Component initialization
     f"src/{project_name}/components/__init__.py",
+    # Utility functions initialization
     f"src/{project_name}/utils/__init__.py",
+    # Configuration module initialization
     f"src/{project_name}/config/__init__.py",
+    # Project-wide configuration settings
     f"src/{project_name}/config/configuration.py",
+    # Pipeline configuration settings
     f"src/{project_name}/pipeline/configuration.py",
+    # Entity initialization
     f"src/{project_name}/entity/__init__.py",
+    # Constants initialization
     f"src/{project_name}/constants/__init__.py", 
-    "config/config.yaml",
-    "dvc.yaml",
-    "params.yaml",
-    "requirements.txt",
-    "setup.py",
-    "research/trails.ipynb",
-    "templates/index.html"
+    "config/config.yaml",  # Project configuration settings in YAML format
+    "dvc.yaml",  # Data version control configuration
+    "params.yaml",  # Parameters for the project
+    "requirements.txt",  # Python dependencies for the project
+    "setup.py",  # Script for packaging and distributing the project
+    "research/trails.ipynb",  # Jupyter notebook for research trails
+    "templates/index.html"  # HTML template file
 ]
+
 
 for filepath in list_of_files :
     filepath = Path(filepath)
