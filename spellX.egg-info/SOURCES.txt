@@ -1,0 +1,6 @@
+README.md
+setup.py
+spellX.egg-info/PKG-INFO
+spellX.egg-info/SOURCES.txt
+spellX.egg-info/dependency_links.txt
+spellX.egg-info/top_level.txt
