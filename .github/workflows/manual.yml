@@ -1,0 +1,39 @@
+name: SpellX
+
+on:
+  pull_request:
+    paths:
+      - 'dvc.yaml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.6
+
+    - name: Install DVC
+      run: |
+        pip install dvc
+
+    - name: Pull DVC Data
+      run: |
+        dvc pull 
+
+    - name: Install Jupyter Notebook
+      run: |
+        pip install jupyter nbconvert
+
+    - name: Convert Notebook to Python Script
+      run: |
+        jupyter nbconvert --to script ./research/NLP_Spelling.ipynb
+
+    - name: Execute Python Script
+      run: |
+        python ./research/NLP_Spelling.ipynb.py
