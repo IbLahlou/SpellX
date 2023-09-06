@@ -390,3 +390,55 @@ x==========x]
 [2023-09-05 15:12:53,720: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-09-06 00:03:11,251: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-06 00:03:11,292: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 00:03:11,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 00:03:11,325: INFO: common: created directory at: artifacts]
+[2023-09-06 00:03:11,325: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-06 00:03:14,847: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2532436
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "4759875c91a855c90bf11cc9ae9c1cc4027622acc948443aab3e915502439677"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CB4C:13111:65228E:685E40:64F7B3AF
+Accept-Ranges: bytes
+Date: Tue, 05 Sep 2023 23:03:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22054-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1693954993.513489,VS0,VE329
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ff25a6b182c248713b4c6d81ccbfecad90837243
+Expires: Tue, 05 Sep 2023 23:08:12 GMT
+Source-Age: 0
+
+]
+[2023-09-06 00:03:15,107: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-06 00:03:15,115: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-06 00:03:15,123: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 00:03:15,132: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 00:03:15,132: INFO: common: created directory at: artifacts]
+[2023-09-06 00:03:15,132: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-06 00:03:15,140: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-06 12:48:59,125: INFO: file_utils: TensorFlow version 2.6.2 available.]
+[2023-09-06 12:49:45,222: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 12:49:45,246: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 12:49:45,254: INFO: common: created directory at: artifacts]
+[2023-09-06 12:49:45,254: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-06 12:49:47,377: INFO: file_utils: https://s3.amazonaws.com/models.huggingface.co/bert/google/pegasus-cnn_dailymail/config.json not found in cache or force_download set to True, downloading to C:\Users\P52s\.cache\torch\transformers\tmph0ify3iq]
+[2023-09-06 12:49:47,925: INFO: file_utils: storing https://s3.amazonaws.com/models.huggingface.co/bert/google/pegasus-cnn_dailymail/config.json in cache at C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
+[2023-09-06 12:49:47,933: INFO: file_utils: creating metadata file for C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
+[2023-09-06 12:49:47,965: INFO: configuration_utils: loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/google/pegasus-cnn_dailymail/config.json from cache at C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
