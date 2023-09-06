@@ -31,7 +31,11 @@ list_of_files = [
     "requirements.txt",  # Python dependencies for the project
     "setup.py",  # Script for packaging and distributing the project
     "research/trails.ipynb",  # Jupyter notebook for research trails
-    "templates/index.html"  # HTML template file
+    "api/templates/index.html",
+    "api/static/css",
+    "api/static/js",
+    "api/static/img",
+    "api/app.py"
 ]
 
 
