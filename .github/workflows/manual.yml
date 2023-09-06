@@ -1,12 +1,12 @@
 name: SpellX
 
 on:
-  push: 
+  push:
     paths:
-      - '**/dvc*.*'  # Déclencher le workflow lorsque des fichiers contenant 'dvc' dans leur nom sont poussés
+      - '**/dvc*.*'
   pull_request:
     paths:
-      - '**/dvc*.*'  # Déclencher le workflow lorsque des fichiers contenant 'dvc' dans leur nom sont modifiés dans une demande de tirage
+      - '**/dvc*.*'
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Python 3.6
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.6
