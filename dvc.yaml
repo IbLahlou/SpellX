@@ -7,5 +7,3 @@ stages:
     outs:
       - artifacts/data_ingestion/data
 
-
-
