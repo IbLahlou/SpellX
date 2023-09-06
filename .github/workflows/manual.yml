@@ -1,9 +1,12 @@
 name: SpellX
 
 on:
+  push: 
+    paths:
+      - '**/dvc*.*'  # Déclencher le workflow lorsque des fichiers contenant 'dvc' dans leur nom sont poussés
   pull_request:
     paths:
-      - 'dvc.yaml'
+      - '**/dvc*.*'  # Déclencher le workflow lorsque des fichiers contenant 'dvc' dans leur nom sont modifiés dans une demande de tirage
 
 jobs:
   build:
