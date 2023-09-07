@@ -442,3 +442,107 @@ x==========x]
 [2023-09-06 12:49:47,925: INFO: file_utils: storing https://s3.amazonaws.com/models.huggingface.co/bert/google/pegasus-cnn_dailymail/config.json in cache at C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
 [2023-09-06 12:49:47,933: INFO: file_utils: creating metadata file for C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
 [2023-09-06 12:49:47,965: INFO: configuration_utils: loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/google/pegasus-cnn_dailymail/config.json from cache at C:\Users\P52s\.cache\torch\transformers\202e8e9ce3a91b24765baa31e9c6577c973b5f38c10c381f2c67664f698e8061.4aa67f1c7beea8b37683140502093daee776d2f7e3d13dc487dc8e920c8ffa34]
+[2023-09-06 19:28:39,254: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 19:28:39,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 19:28:39,293: INFO: common: created directory at: artifacts]
+[2023-09-06 19:28:39,297: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-06 19:29:08,193: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-06 19:29:08,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 19:29:08,210: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 19:29:08,210: INFO: common: created directory at: artifacts]
+[2023-09-06 19:29:08,210: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-06 19:29:10,852: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 2532436
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "4759875c91a855c90bf11cc9ae9c1cc4027622acc948443aab3e915502439677"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FA38:D110:EC561C:F4D4A1:64F8C4F4
+Accept-Ranges: bytes
+Date: Wed, 06 Sep 2023 18:29:10 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200094-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1694024950.639090,VS0,VE461
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: dba23602cfa4adf41b8b45bca28b1bcbda6a4707
+Expires: Wed, 06 Sep 2023 18:34:10 GMT
+Source-Age: 0
+
+]
+[2023-09-06 19:29:11,179: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-06 19:29:11,179: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-06 19:29:11,187: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 19:29:11,203: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 19:29:11,203: INFO: common: created directory at: artifacts]
+[2023-09-06 19:29:11,224: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-06 19:29:11,233: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-06 19:29:23,381: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 19:29:23,388: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 19:29:23,392: INFO: common: created directory at: artifacts]
+[2023-09-06 19:29:23,392: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-06 20:00:18,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 20:00:18,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 20:00:18,463: INFO: common: created directory at: artifacts]
+[2023-09-06 20:00:18,466: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-06 20:01:37,962: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 20:01:37,971: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 20:01:37,971: INFO: common: created directory at: artifacts]
+[2023-09-06 20:01:37,979: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-06 21:03:35,003: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-06 21:03:35,015: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-06 21:03:35,019: INFO: common: created directory at: artifacts]
+[2023-09-06 21:03:35,023: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-07 10:52:57,089: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 10:52:57,113: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 10:52:57,113: INFO: common: created directory at: artifacts]
+[2023-09-07 10:52:57,121: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-07 10:53:24,391: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 10:53:24,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 10:53:24,408: INFO: common: created directory at: artifacts]
+[2023-09-07 10:53:24,412: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-07 10:53:32,767: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 10:53:32,773: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 10:53:32,779: INFO: common: created directory at: artifacts]
+[2023-09-07 10:53:32,781: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-07 10:55:43,516: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 10:55:43,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 10:55:43,532: INFO: common: created directory at: artifacts]
+[2023-09-07 10:55:43,536: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-07 17:41:49,399: WARNING: def_function: 5 out of the last 29 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000029439A41F28> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-09-07 18:18:15,821: WARNING: def_function: 5 out of the last 17 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002943C3141E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-09-07 23:47:19,157: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 23:47:19,181: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 23:47:19,188: INFO: common: created directory at: artifacts]
+[2023-09-07 23:48:31,248: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 23:48:31,254: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 23:48:31,257: INFO: common: created directory at: artifacts]
+[2023-09-07 23:48:31,260: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-07 23:51:27,590: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-07 23:51:27,599: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-07 23:51:27,599: INFO: common: created directory at: artifacts]
+[2023-09-07 23:51:27,607: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-07 23:51:30,191: DEBUG: model: Spello training started..]
+[2023-09-07 23:51:30,947: DEBUG: model: Context model training started ...]
+[2023-09-07 23:52:04,197: DEBUG: model: Symspell training started ...]
+[2023-09-07 23:52:04,205: INFO: symspell: Creating spell check dictionary...]
+[2023-09-07 23:53:06,359: INFO: symspell: 62.16 seconds to run]
+[2023-09-07 23:53:06,367: INFO: symspell: total words processed: 29624]
+[2023-09-07 23:53:06,368: INFO: symspell: total unique words in corpus: 29624]
+[2023-09-07 23:53:06,371: INFO: symspell: total items in dictionary (corpus words & deletions): 2112195]
+[2023-09-07 23:53:06,371: INFO: symspell: edit distance for deletions: 3]
+[2023-09-07 23:53:06,371: INFO: symspell: length of longest word in corpus: 18]
+[2023-09-07 23:53:06,371: DEBUG: model: Phoneme training started ...]
+[2023-09-07 23:53:06,953: DEBUG: model: Spello training completed successfully ...]
