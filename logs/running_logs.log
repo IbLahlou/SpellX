@@ -546,3 +546,173 @@ x==========x]
 [2023-09-07 23:53:06,371: INFO: symspell: length of longest word in corpus: 18]
 [2023-09-07 23:53:06,371: DEBUG: model: Phoneme training started ...]
 [2023-09-07 23:53:06,953: DEBUG: model: Spello training completed successfully ...]
+[2023-09-08 00:19:06,806: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 00:19:06,806: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:19:06,822: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:19:06,822: INFO: common: created directory at: artifacts]
+[2023-09-08 00:19:06,822: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 00:19:06,822: INFO: data_ingestion: File already exists of size: ~ 2473 KB]
+[2023-09-08 00:19:07,069: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:19:07,069: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-08 00:19:07,085: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:19:07,088: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:19:07,088: INFO: common: created directory at: artifacts]
+[2023-09-08 00:19:07,093: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-08 00:19:07,093: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:19:07,101: INFO: main: >>>>>> stage Model Training stage started <<<<<<]
+[2023-09-08 00:19:07,109: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:19:07,116: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:19:07,116: INFO: common: created directory at: artifacts]
+[2023-09-08 00:19:07,116: ERROR: main: 'ConfigurationManager' object has no attribute 'get_model_trainer_config']
+Traceback (most recent call last):
+  File ".\main.py", line 31, in <module>
+    model_training.main()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\pipeline\stage_03_model_training.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_model_trainer_config'
+[2023-09-08 00:21:18,631: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 00:21:18,637: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:21:18,646: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:21:18,648: INFO: common: created directory at: artifacts]
+[2023-09-08 00:21:18,648: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 00:21:18,648: INFO: data_ingestion: File already exists of size: ~ 2473 KB]
+[2023-09-08 00:21:18,848: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:21:18,848: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-08 00:21:18,857: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:21:18,857: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:21:18,857: INFO: common: created directory at: artifacts]
+[2023-09-08 00:21:18,857: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-08 00:21:18,857: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:21:18,857: INFO: main: >>>>>> stage Model Training stage started <<<<<<]
+[2023-09-08 00:21:18,873: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:21:18,873: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:21:18,873: INFO: common: created directory at: artifacts]
+[2023-09-08 00:21:18,873: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-08 00:21:30,592: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data/train\\w']
+Traceback (most recent call last):
+  File ".\main.py", line 31, in <module>
+    model_training.main()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\pipeline\stage_03_model_training.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 52, in train
+    raise e
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 46, in train
+    data = read_text(self.config.data_path, self.config.data_file)
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\utils\trainer.py", line 110, in read_text
+    strings = unidecode.unidecode(open(file_path).read())
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data/train\\w'
+[2023-09-08 00:22:27,677: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 00:22:27,707: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:22:27,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:22:27,725: INFO: common: created directory at: artifacts]
+[2023-09-08 00:22:27,725: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 00:22:27,725: INFO: data_ingestion: File already exists of size: ~ 2473 KB]
+[2023-09-08 00:22:27,962: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:22:27,962: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-08 00:22:27,962: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:22:27,979: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:22:27,979: INFO: common: created directory at: artifacts]
+[2023-09-08 00:22:27,979: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-08 00:22:27,985: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:22:27,985: INFO: main: >>>>>> stage Model Training stage started <<<<<<]
+[2023-09-08 00:22:27,993: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:22:28,001: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:22:28,008: INFO: common: created directory at: artifacts]
+[2023-09-08 00:22:28,008: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-08 00:22:38,007: ERROR: main: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data/train/w']
+Traceback (most recent call last):
+  File ".\main.py", line 31, in <module>
+    model_training.main()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\pipeline\stage_03_model_training.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 52, in train
+    raise e
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 46, in train
+    data = read_text(self.config.data_path, self.config.data_file)
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\utils\trainer.py", line 110, in read_text
+    strings = unidecode.unidecode(open(file_path).read())
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data/train/w'
+[2023-09-08 00:33:54,025: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 00:33:54,065: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:33:54,068: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:33:54,082: INFO: common: created directory at: artifacts]
+[2023-09-08 00:33:54,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 00:33:54,085: INFO: data_ingestion: File already exists of size: ~ 2473 KB]
+[2023-09-08 00:33:54,342: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:33:54,358: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-08 00:33:54,358: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:33:54,374: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:33:54,382: INFO: common: created directory at: artifacts]
+[2023-09-08 00:33:54,382: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-08 00:33:54,389: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:33:54,397: INFO: main: >>>>>> stage Model Training stage started <<<<<<]
+[2023-09-08 00:33:54,406: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:33:54,413: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:33:54,413: INFO: common: created directory at: artifacts]
+[2023-09-08 00:33:54,426: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-08 00:34:06,693: ERROR: main: 'ModelTrainer' object has no attribute 'data_file']
+Traceback (most recent call last):
+  File ".\main.py", line 31, in <module>
+    model_training.main()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\pipeline\stage_03_model_training.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 61, in train
+    raise e
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 53, in train
+    path = self.get_data_filename()
+  File "c:\users\p52s\documents\python project\spellx\src\spellX\components\model_trainer.py", line 20, in get_data_filename
+    return f"{self.config.data_path}/{self.data_file}"
+AttributeError: 'ModelTrainer' object has no attribute 'data_file'
+[2023-09-08 00:34:50,605: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 00:34:50,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:34:50,627: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:34:50,627: INFO: common: created directory at: artifacts]
+[2023-09-08 00:34:50,627: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 00:34:50,627: INFO: data_ingestion: File already exists of size: ~ 2473 KB]
+[2023-09-08 00:34:50,831: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:34:50,846: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-08 00:34:50,846: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:34:50,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:34:50,864: INFO: common: created directory at: artifacts]
+[2023-09-08 00:34:50,864: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-08 00:34:50,867: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-08 00:34:50,867: INFO: main: >>>>>> stage Model Training stage started <<<<<<]
+[2023-09-08 00:34:50,883: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 00:34:50,889: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 00:34:50,898: INFO: common: created directory at: artifacts]
+[2023-09-08 00:34:50,900: INFO: common: created directory at: artifacts/model_trainer]
+[2023-09-08 00:35:02,257: DEBUG: model: Spello training started..]
+[2023-09-08 00:35:02,276: DEBUG: model: Context model training started ...]
+[2023-09-08 00:35:02,581: DEBUG: model: Symspell training started ...]
+[2023-09-08 00:35:03,055: INFO: symspell: Creating spell check dictionary...]
+[2023-09-08 00:35:17,727: INFO: symspell: 14.66 seconds to run]
+[2023-09-08 00:35:17,727: INFO: symspell: total words processed: 4153]
+[2023-09-08 00:35:17,727: INFO: symspell: total unique words in corpus: 4153]
+[2023-09-08 00:35:17,727: INFO: symspell: total items in dictionary (corpus words & deletions): 383935]
+[2023-09-08 00:35:17,727: INFO: symspell: edit distance for deletions: 3]
+[2023-09-08 00:35:17,727: INFO: symspell: length of longest word in corpus: 19]
+[2023-09-08 00:35:17,727: DEBUG: model: Phoneme training started ...]
+[2023-09-08 00:35:17,834: DEBUG: model: Spello training completed successfully ...]
+[2023-09-08 00:35:18,009: INFO: main: >>>>>> stage Model Training stage completed <<<<<<
+
+x==========x]
