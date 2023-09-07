@@ -7,3 +7,18 @@ stages:
     outs:
       - artifacts/data_ingestion/data
 
+  data_validation:
+    cmd: python src/spellX/pipeline/stage_02_data_validation.py
+    deps:
+      - src/spellX/pipeline/stage_02_data_validation.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_validation/status.txt
+
+  model_trainig:
+    cmd: python src/spellX/pipeline/stage_03_model_training.py
+    deps:
+      - src/spellX/pipeline/stage_03_model_training.py
+      - config/config.yaml
+    outs:
+      - artifacts/model/model.h5
