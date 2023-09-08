@@ -1,7 +1,6 @@
-transformers==2.8.0
+spello
+nltk
 datasets
-tensorflow
-keras
 pandas
 dvc
 notebook
@@ -12,13 +11,10 @@ python-box==6.0.2
 pyYAML
 tqdm
 ensure==1.0.2
-joblib
 types-PyYAML
 scipy
 Flask
-nltk
 Flask-Cors
-tqdm
 scikit-learn
 pytest
 unidecode
