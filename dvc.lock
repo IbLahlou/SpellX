@@ -14,3 +14,42 @@ stages:
       md5: 0a951d2e6fa53a95a87802f994405483.dir
       size: 6922071
       nfiles: 6
+  data_validation:
+    cmd: python src/spellX/pipeline/stage_02_data_validation.py
+    deps:
+    - path: config/config.yaml
+      md5: 02b348d719d60ffb63b3487493ae2904
+      size: 745
+    - path: src/spellX/pipeline/stage_02_data_validation.py
+      md5: f777fbd0787a56789aedfdfe9981d750
+      size: 490
+    outs:
+    - path: artifacts/data_validation/status.txt
+      md5: 86e6a2f694c57a675b3e2da6b95ff9ba
+      size: 23
+  model_trainig:
+    cmd: python src/spellX/pipeline/stage_03_model_training.py
+    deps:
+    - path: config/config.yaml
+      md5: 02b348d719d60ffb63b3487493ae2904
+      size: 745
+    - path: src/spellX/pipeline/stage_03_model_training.py
+      md5: 40d353342b3d0d3eb74c0b7eae86115d
+      size: 462
+    outs:
+    - path: artifacts/model_trainer/model0.pkl
+      md5: 69a48d9bf4227c3023e065f1371b8214
+      size: 101106244
+  model_evaluation:
+    cmd: python src/spellX/pipeline/stage_04_model_evaluation.py
+    deps:
+    - path: config/config.yaml
+      md5: 02b348d719d60ffb63b3487493ae2904
+      size: 745
+    - path: src/spellX/pipeline/stage_04_model_evaluation.py
+      md5: 84da066583923ab071df40d75de5b243
+      size: 533
+    outs:
+    - path: artifacts/model_evaluation/metrics.txt
+      md5: a6801f00dda0ffce49ff244b39f43a4a
+      size: 180
