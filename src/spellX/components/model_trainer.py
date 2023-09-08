@@ -26,6 +26,12 @@ class ModelTrainer :
             if not os.path.exists(model_path):
                 with open("./artifacts/data_ingestion/data/train/big.txt", "r") as f:
                     big = f.readlines()
+                with open("./artifacts/data_ingestion/data/train/wikipedia.txt", "r") as f:
+                    wiki = f.readlines()
+                with open("./artifacts/data_ingestion/data/train/aspell.txt", "r") as f:
+                    aspell = f.readlines()
+                with open("./artifacts/data_ingestion/data/train/birkbeck.txt", "r") as f:
+                    birk = f.readlines()
                 big  = [i.strip() for i in big]
                 #Remove \t - tab
                 big_t = [re.sub('\\t', ' ', text) for text in big]
@@ -39,10 +45,14 @@ class ModelTrainer :
                 big_stripped = [text.strip() for text in big_star]
                 sp = SpellCorrectionModel(language='en')
                 sp.train(big_stripped)
+                sp.train(wiki)
+                sp.train(aspell)
+                sp.train(birk)
                 self.sp = sp
 
                 with open(model_path, 'wb') as file:
                     pickle.dump(self.sp, file)
+
 
             else:
                 # Model loading
@@ -61,6 +71,10 @@ class ModelTrainer :
             raise e
 
                 
+
+
+
+
 
 
 

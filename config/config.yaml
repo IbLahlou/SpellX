@@ -1,6 +1,5 @@
 artifacts_root: artifacts
 
-
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/IbLahlou/artifacts/raw/main/data.zip
@@ -14,5 +13,10 @@ data_validation:
 
 model_trainer :
   root_dir: artifacts/model_trainer
-  data_path : artifacts/data_ingestion/data/train
+  data_path : artifacts/data_ingestion/data/test
+  data_file : spell-testset1.txt
+
+model_evaluation :
+  root_dir: artifacts/model_evaluation
+  data_path : artifacts/data_ingestion/data/test
   data_file : wikipedia.txt
