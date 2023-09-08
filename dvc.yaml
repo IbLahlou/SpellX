@@ -21,4 +21,12 @@ stages:
       - src/spellX/pipeline/stage_03_model_training.py
       - config/config.yaml
     outs:
-      - artifacts/model/model.h5
+      - artifacts/model_trainer/model0.pkl
+  
+  model_evaluation:
+    cmd: python src/spellX/pipeline/stage_04_model_evaluation.py
+    deps:
+      - src/spellX/pipeline/stage_04_model_evaluation.py
+      - config/config.yaml
+    outs:
+      - artifacts/model_evaluation/metrics.txt

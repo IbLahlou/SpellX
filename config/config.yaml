@@ -13,11 +13,11 @@ data_validation:
 
 model_trainer :
   root_dir: artifacts/model_trainer
-  data_path : artifacts/data_ingestion/data/test
+  data_path : artifacts/data_ingestion/data/validation
   data_file : spell-testset1.txt
 
 model_evaluation :
   root_dir: artifacts/model_evaluation
   data_path : artifacts/data_ingestion/data/test
-  data_file : wikipedia.txt
+  data_file : spell-testset2.txt
   model_path : artifacts/model_trainer

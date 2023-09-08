@@ -24,7 +24,7 @@ class ModelEvaluator:
         model = self.get_model_filename()
 
         # Read the test data from spell-testset1.txt
-        with open("./artifacts/data_ingestion/data/test/spell-testset1.txt", "r") as f:
+        with open("./artifacts/data_ingestion/data/test/spell-testset2.txt", "r") as f:
             test_data = f.readlines()
 
         # Initialize lists to store ROUGE and BLEU scores
@@ -85,3 +85,8 @@ class ModelEvaluator:
         # Save the results to the unique YAML file
         with open(filename, "w") as yaml_file:
             yaml.dump(result, yaml_file)
+
+        file = f"{self.config.root_dir}/metrics.txt"
+
+        with open(file, "w") as txt_file:
+            yaml.dump(result, txt_file)
