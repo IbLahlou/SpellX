@@ -19,3 +19,10 @@ class ModelTrainerConfig:
     root_dir : Path
     data_path : Path
     data_file : Path
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir : Path
+    data_path : Path
+    data_file : Path
+    model_path : Path

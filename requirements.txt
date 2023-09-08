@@ -1,5 +1,4 @@
 spello
-py-rouge
 nltk
 datasets
 pandas

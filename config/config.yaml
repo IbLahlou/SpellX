@@ -20,3 +20,4 @@ model_evaluation :
   root_dir: artifacts/model_evaluation
   data_path : artifacts/data_ingestion/data/test
   data_file : wikipedia.txt
+  model_path : artifacts/model_trainer
