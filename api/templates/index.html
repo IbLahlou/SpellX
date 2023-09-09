@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="../static/image/cad.png" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>SpellX | IL D Company </title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            <img src="../static/image/cad.png" alt="" style="width:95%">
+          </div>
+        </div>
+
+
+        <h2 class="profile__name">SpellX</h2>
+        <h3 class="profile__profession">Spelling Text Corrector</h3>
+
+  <br>
+
+      <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">1</h3>
+          <p class="profile__info-description">
+             Contributer 
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number"> 1st</h3>
+          <p class="profile__info-description">
+             Version
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number"> 0 </h3>
+          <p class="profile__info-description">Satisfied <br> customers</p>
+        </div>
+      </div>
+
+      <div class="profile__buttons">
+        <!-- Insert your Documentation -->
+        <a download="" href="../static/pdf/Gianell-Cv.pdf" class="button">
+          Documentation <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <a href="https://m.me/bedimcode" target="_blank" class="button button__small button__gray">
+            <i class="ri-messenger-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Text Correction
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Monitoring
+        </button>
+
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+
+    <div class="projects__content grid filters__active" data-content id="projects">
+        <h1>Text Correction</h1>
+        <form class="feedback-form" method="post">
+            Enter Text:
+            <textarea name="user_input" id="user_input" rows="5" placeholder="Enter your text here">{{ user_input }}</textarea>
+            <button type="submit">Correct Text</button>
+        </form>
+        {% if corrected_text %}
+        <form class="feedback-form" method="post">
+            Corrected Text:
+            <textarea name="user_input" id="user_input" rows="5" placeholder="Enter your text here">{{ corrected_text }}</textarea>
+
+        </form>
+        {% endif %}
+
+<br>
+<br>
+<form action="/submit-feedback" method="post" class="feedback-form">
+    <h1>Feedback</h1>
+
+<br>
+      Name:
+      <br>
+      <br>
+      <input type="text" id="name" name="name" required placeholder="your name">
+    <br>
+      Email:
+      <br>
+      <br>
+      <input type="email" id="name" name="email" required placeholder="your email">
+    <br>
+      Your comments:
+      <br>
+      <br>
+        <textarea name="comments" id="user_input" rows="3" placeholder="your comments"></textarea>
+      Are you satisfied?
+    <div class="range-container">
+        <input type="range" name="satisfied" min="0" max="10" >
+        <div class="range-labels">
+            <span class="range-label"><i class="ri-emotion-unhappy-fill"></i></span>
+            <span class="range-label"><i class="ri-emotion-normal-fill"></i></span>
+            <span class="range-label"><i class="ri-emotion-fill"></i></span>
+        </div>
+    </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+        <!--=============== SKILLS ===============-->
+<div class="skills__content grid" data-content id="skills">
+  <div class="skills__area">
+    <h3 class="skills__title">Statistical Metrics</h3>
+
+    <div class="skills__box">
+      <div class="skills__group">
+        <div class="skills__data">
+          <i class="ri-bar-chart-line"></i>
+
+          <div>
+            <h3 class="skills__name">Model Accuracy</h3>
+            <span class="skills__level">?</span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <i class="ri-bar-chart-line"></i>
+
+          <div>
+            <h3 class="skills__name">Training Loss</h3>
+            <span class="skills__level">?</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__group">
+        <div class="skills__data">
+          <i class="ri-line-chart-fill"></i>
+
+          <div>
+            <h3 class="skills__name">Validation Accuracy</h3>
+            <span class="skills__level">?</span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <i class="ri-line-chart-fill"></i>
+
+          <div>
+            <h3 class="skills__name">Validation Loss</h3>
+            <span class="skills__level">?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__area">
+    <h3 class="skills__title">NLP Metrics</h3>
+
+    <div class="skills__box">
+      <div class="skills__group">
+        <div class="skills__data">
+          <i class="ri-keyboard-line"></i>
+
+          <div>
+            <h3 class="skills__name">Average BLEU-1 Score</h3>
+            <span class="skills__level">42.701%</span>
+          </div>
+        </div>
+
+        <div class="skills__data">
+          <i class="ri-edit-line"></i>
+
+          <div>
+            <h3 class="skills__name">Average ROUGE-1 F1 Score</h3>
+            <span class="skills__level">42.707%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__group">
+        <div class="skills__data">
+          <i class="ri-text-spacing"></i>
+
+          <div>
+            <h3 class="skills__name">Average ROUGE-1 Precision</h3>
+            <span class="skills__level">42.701%</span>
+          </div>
+        </div>
+        <div class="skills__data">
+          <i class="ri-text-spacing"></i>
+
+          <div>
+            <h3 class="skills__name">Average ROUGE-1 Recall</h3>
+            <span class="skills__level">42.715%</span>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+            <ul class="profile__social">
+          <a href="https://www.medium.com/" target="_blank" class="profile__social-link">
+            <i class="ri-medium-line"></i>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="profile__social-link">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      &#169; Copyright. All rigths reserved
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- JavaScript Alert for Slow Response -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    // Measure server response time
+    var startTime = new Date().getTime();
+
+    // Attach an event handler to form submission
+    $("form").submit(function() {
+        var endTime = new Date().getTime();
+        var responseTime = endTime - startTime;
+
+        // Check if response time is greater than 10 seconds
+        if (responseTime > 10000) {
+            alert("Please Wait a little bit.");
+        }
+    });
+    </script>
+</body>
+</body>
+
+
+
+</html>
