@@ -51,9 +51,10 @@ Before you begin, make sure you have the following in place:
 - **Python:** Ensure you have Python (version 3.6 or 3.8) installed.
 
 ## Architecture
-![[Pasted image 20230916111157.png]]
-![[Pasted image 20230916111126.png]]
-![[Pasted image 20230916110530.png]]
+<img src="readme_assets/Pasted image 20230916111157.png">
+<img src="readme_assets/Pasted image 20230916111126.png">
+<img src="readme_assets/Pasted image 20230916110530.png">
+
 ## Data Source
 
 [Spelling Corrector | Kaggle](https://www.kaggle.com/datasets/bittlingmayer/spelling)
@@ -99,7 +100,17 @@ flask run
 Now, the project is installed and running locally on your machine.
 
 
+## Workflows
 
+1. Update config.yaml
+2. Update secrets.yaml [Optional]
+3. Update params.yaml
+4. Update the entity
+5. Update the configuration manager in src config
+6. Update the components
+7. Update the pipeline 
+8. Update the main.py
+9. Update the dvc.yaml
 
 ## Contributing
 
