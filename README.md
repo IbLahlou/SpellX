@@ -6,9 +6,23 @@
   <a href="https://www.python.org/"><img alt="Python Version" src="https://img.shields.io/badge/Python-3.6%2B-informational"></a>
   <a href="https://github.com/IbLahlou/SpellX"><img alt="GitHub Repo" src="https://img.shields.io/badge/GitHub-Repo-blue"></a>
   <a href="https://www.docker.com/"><img alt="Docker" src="https://img.shields.io/badge/Docker-Latest-blue"></a>
-  <a href="https://jupyter.org/"><img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-Latest-orange"></a>
 </p>
 
+<p align="center">
+<img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" width="50" height="50" />
+<img src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" alt="GitLab" width="50" height="50" />
+<img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" width="50" height="50" />
+<a href="https://cdnlogo.com/logo/data-version-control_134778.html">
+  <img src="https://www.cdnlogo.com/logos/d/2/data-version-control.svg" width="50" height="50">
+</a>
+
+<img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" width="50" height="50" />
+
+
+
+  
+
+</p>
 
 <hr>
 
