@@ -1,5 +1,7 @@
 spello
 nltk
+tensorflow
+keras
 datasets
 pandas
 dvc
